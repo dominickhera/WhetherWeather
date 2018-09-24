@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25FC111621597E3B00E40E21 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC111521597E3B00E40E21 /* RequestManager.swift */; };
+		25FC11182159808B00E40E21 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC11172159808B00E40E21 /* Enums.swift */; };
+		25FC11222159892400E40E21 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC11212159892400E40E21 /* UserProfile.swift */; };
+		25FC112421598A1A00E40E21 /* savedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC112321598A1A00E40E21 /* savedLocation.swift */; };
 		50418EBC950A11F9AD5135E9 /* Pods_WhetherWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5478B11FAB0C1D9481B6830A /* Pods_WhetherWeather.framework */; };
 		CD14324FC2338AA7DAA924CB /* Pods_WhetherWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAE3F20CF8ABFE3D69A34C5 /* Pods_WhetherWeatherUITests.framework */; };
 		E6142FB320EBDFFE000F329C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6142FB220EBDFFE000F329C /* AppDelegate.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25FC111521597E3B00E40E21 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		25FC11172159808B00E40E21 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		25FC11212159892400E40E21 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		25FC112321598A1A00E40E21 /* savedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedLocation.swift; sourceTree = "<group>"; };
 		2FF5A6F228884D0D4C37E961 /* Pods-WhetherWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhetherWeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhetherWeatherUITests/Pods-WhetherWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3DAA512AA802C8C119909D53 /* Pods-WhetherWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhetherWeatherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhetherWeatherTests/Pods-WhetherWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
 		5478B11FAB0C1D9481B6830A /* Pods_WhetherWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhetherWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +149,10 @@
 			children = (
 				E6142FB220EBDFFE000F329C /* AppDelegate.swift */,
 				E6142FB420EBDFFE000F329C /* ViewController.swift */,
+				25FC111521597E3B00E40E21 /* RequestManager.swift */,
+				25FC11172159808B00E40E21 /* Enums.swift */,
+				25FC11212159892400E40E21 /* UserProfile.swift */,
+				25FC112321598A1A00E40E21 /* savedLocation.swift */,
 				E6142FB620EBDFFE000F329C /* Main.storyboard */,
 				E6142FBC20EBE000000F329C /* Assets.xcassets */,
 				E6142FBE20EBE000000F329C /* LaunchScreen.storyboard */,
@@ -361,13 +373,27 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WhetherWeather/Pods-WhetherWeather-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CardParts/CardParts.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/OpenWeatherMapKit/OpenWeatherMapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CardParts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenWeatherMapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,7 +410,11 @@
 			files = (
 				E6142FB520EBDFFE000F329C /* ViewController.swift in Sources */,
 				E6142FBB20EBDFFE000F329C /* WhetherWeather.xcdatamodeld in Sources */,
+				25FC11222159892400E40E21 /* UserProfile.swift in Sources */,
+				25FC11182159808B00E40E21 /* Enums.swift in Sources */,
 				E6142FB320EBDFFE000F329C /* AppDelegate.swift in Sources */,
+				25FC111621597E3B00E40E21 /* RequestManager.swift in Sources */,
+				25FC112421598A1A00E40E21 /* savedLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dominick.WhetherWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -586,7 +616,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dominick.WhetherWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
